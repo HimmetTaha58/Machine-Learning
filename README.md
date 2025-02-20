@@ -20,15 +20,13 @@ K-Nearest Neighbors (KNN)
 Clone the repository and run it on your local machine:
 
 bash
-Kopyala
-Düzenle
+
 git clone https://github.com/username/ml-models.git
 cd ml-models
 To run Jupyter Notebook:
 
 bash
-Kopyala
-Düzenle
+
 jupyter notebook
 📌 Notes
 Each model includes theoretical explanations and practical implementations.
