@@ -1,0 +1,19 @@
+Bu ikisi arasındaki fark şu : 
+Temelde Log Regr (binary) sadece evet hayır diye sınıflandırırken kullanılıyor Multiple class Log regr da 2 den fazla sınıfları bulmak istediğimizde kullanıyoruz örneğin penguen türlerini bulma 
+
+
+
+Normal (binary) logaritmik regresyon ve çoklu sınıf (multinomial) logaritmik regresyon arasındaki temel fark, modelin sınıf sayısı ve kullandıkları matematiksel yaklaşımlardır.
+
+Normal (Binary) Logaritmik Regresyon:
+Kullanım Durumu: İki sınıf arasındaki bir ayrımı modellemek için kullanılır (örneğin, evet/hayır, başarılı/başarısız, hastalık var/hastalık yok).
+Çıktı: Model, her bir gözlem için hangi sınıfın olma olasılığını tahmin eder. Örneğin, bir gözlem için "sınıf 1" olma olasılığı %80, "sınıf 2" olma olasılığı %20 olabilir.
+Matematiksel Yapı: Bu modelde lojistik fonksiyon (sigmoid fonksiyon) kullanılır ve her gözlem için tek bir sınıfın olasılığı tahmin edilir.
+ 
+Çoklu Sınıf (Multinomial) Logaritmik Regresyon:
+Kullanım Durumu: Üç veya daha fazla sınıfı modellemek için kullanılır. Örneğin, 3 farklı türdeki bir çiçeği sınıflandırma, bir e-posta mesajını spam, reklam ve kişisel olarak sınıflandırma.
+Çıktı: Model, her bir gözlem için tüm sınıflara ait olasılıkları tahmin eder. Örneğin, bir gözlem için "sınıf A" olma olasılığı %50, "sınıf B" olma olasılığı %30 ve "sınıf C" olma olasılığı %20 olabilir.
+Matematiksel Yapı: Çoklu sınıf regresyonda softmax fonksiyonu kullanılır. Bu fonksiyon, her sınıf için olasılığı hesaplayarak toplamlarının 1 olmasını sağlar.
+
+Binary Logistik Regresyon sadece iki sınıfı ayırmak için kullanılır ve her gözlem için bir olasılık tahmin eder.
+Multinomial Logistik Regresyon ise üç veya daha fazla sınıfı ayırt etmek için kullanılır ve her gözlem için tüm sınıflara ait olasılıkları tahmin eder.
